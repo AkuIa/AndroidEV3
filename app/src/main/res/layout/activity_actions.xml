@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Actions">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/buttonRetour"
+            android:layout_width="158dp"
+            android:layout_height="62dp"
+            android:drawableLeft="@drawable/retour"
+            android:text="Revenir en arrière"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonMettreAJourSlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_popup_sync"
+            android:text="Mettre à jour les Slides"
+            app:backgroundTint="#EF7400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.592"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonScannerLesBriques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanner les briques"
+            android:drawableLeft="@drawable/scan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.224"
+            app:backgroundTint="#23B414"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/buttonTrierLesBriques"
+            android:layout_width="142dp"
+            android:layout_height="70dp"
+            android:drawableLeft="@drawable/trier"
+            android:text="Trier les briques"
+            app:backgroundTint="#14A1B4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.341"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonViderLesBacs"
+            android:layout_width="169dp"
+            android:layout_height="70dp"
+            android:drawableLeft="@drawable/poubelle"
+            android:text="Vider la rampe\n(poubelle)"
+            app:backgroundTint="#BB7400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.931"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.342"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonArreter"
+            android:layout_width="163dp"
+            android:layout_height="67dp"
+            android:drawableLeft="@drawable/stop"
+            android:text="Arreter le processus"
+            app:backgroundTint="#FF0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.929"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonContenuBacs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visualiser le contenu des bacs"
+        android:drawableLeft="@drawable/visible"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center"
+        app:backgroundTint="#B000A2"
+        tools:ignore="MissingConstraints" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
