@@ -29,11 +29,11 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/buttonMettreAJourSlide"
+            android:id="@+id/buttonMettreAJourRampe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@android:drawable/ic_popup_sync"
-            android:text="Mettre à jour les Slides"
+            android:text="Mettre à jour la rampe"
             app:backgroundTint="#EF7400"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

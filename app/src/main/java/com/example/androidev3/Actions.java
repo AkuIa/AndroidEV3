@@ -2,32 +2,19 @@ package com.example.androidev3;
 
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
 import android.widget.Button;
 
-import androidx.core.view.WindowCompat;
-import androidx.navigation.NavController;
 import android.content.Intent;
 import android.content.DialogInterface;
-import androidx.navigation.Navigation;
-
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.appcompat.app.AlertDialog;
-import androidx.navigation.ui.NavigationUI;
-
-
-
 
 import androidx.appcompat.app.AlertDialog;
+
 
 import java.io.IOException;
-
-import com.example.androidev3.databinding.ActivityActionsBinding;
 
 public class Actions extends AppCompatActivity {
 
@@ -164,7 +151,7 @@ public class Actions extends AppCompatActivity {
             }
         });
 
-        Button Update = findViewById(R.id.buttonMettreAJourSlide);
+        Button Update = findViewById(R.id.buttonMettreAJourRampe);
         Update.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
